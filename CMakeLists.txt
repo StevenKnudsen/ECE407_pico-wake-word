@@ -22,6 +22,7 @@ set(PICO_TFLMICRO_MICRO_SPEECH_PATH ${CMAKE_CURRENT_LIST_DIR}/lib/pico-tflmicro/
 target_include_directories(pico_micro_speech_analog
   PRIVATE
   ${PICO_TFLMICRO_MICRO_SPEECH_PATH}/.
+  ${PICO_TFLMICRO_MICRO_SPEECH_PATH}/tensorflow/lite/micro/tools/make/downloads/kissfft
 )
 
 set_target_properties(
@@ -115,6 +116,7 @@ set(PICO_TFLMICRO_MICRO_SPEECH_PATH ${CMAKE_CURRENT_LIST_DIR}/lib/pico-tflmicro/
 target_include_directories(pico_micro_speech_pdm
   PRIVATE
   ${PICO_TFLMICRO_MICRO_SPEECH_PATH}/.
+  ${PICO_TFLMICRO_MICRO_SPEECH_PATH}/tensorflow/lite/micro/tools/make/downloads/kissfft
 )
 
 set_target_properties(
